@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	font-size: 18px;
+}
+
+body {
+	background-color: #0f0f0f;
+}
+
+.bg-0f0f0f {
+	background-color: #0f0f0f;
+}
+
+.bg-222 {
+	background: #222;
+}
+
+.bg-272727 {
+	background: #272727;
+}
+
+.bg-3f3f3f {
+	background-color: #3f3f3f;
+}
+
+.hover-bg-3f3f3f:hover {
+	background: #3f3f3f;
+}
+
+.border-1 {
+	border-width: 1px;
+}
+
+.text-272727 {
+	color: #272727;
+}
+
+.text-696969 {
+	color: #696969;
+}
+
+.border-272727 {
+	border-color: #272727;
+}
+
+.live {
+	top: 83%;
+	right: 2%;
+}
+
+.live span {
+	line-height: 1rem;
+}
+
+.time {
+	top: 84.5%;
+	right: 1%;
+}
+
+.card:hover .time {
+	opacity: 0;
+}
+
+.text-170 {
+	color: rgb(170, 170, 170);
+}
+
+.w-15 {
+	width: 15%;
+}
+
+.top-70px {
+	top: 70px;
+}
+
+.w-18px {
+	width: 18px;
+}
+
+.h-18px {
+	height: 18px;
+}
+
+.right-40 {
+	right: 40%;
+}
+
+.top-9-5 {
+	top: 9.5%;
+	;
+}
+.left-76{
+	left: 19rem;
+}
+
+/* SCROLLBAR */
+/* Scroll bar'ın genel stilini tanımlayın */
+::-webkit-scrollbar {
+	width: 8px;
+	/* Scroll bar genişliği */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Scroll bar arka plan rengi */
+}
+
+/* Scroll bar'ın yuvarlak kaydırma göstergesini stilini tanımlayın */
+::-webkit-scrollbar-thumb {
+	background-color: #888;
+	/* Kaydırma göstergesi rengi */
+	border-radius: 4px;
+	/* Kaydırma göstergesi köşe yarıçapı */
+}
+
+/* Aktif (üzerine gelindiğinde) scroll bar'ın yuvarlak kaydırma göstergesini stilini tanımlayın */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+	/* Üzerine gelindiğinde kaydırma göstergesi rengi */
+}
+
+/* Scroll bar yolu (kaydırma yolu) stilini tanımlayın */
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	/* Kaydırma yolu arka plan rengi */
+}
+
+/* Scroll bar yolu üzerine gelindiğinde stilini tanımlayın */
+::-webkit-scrollbar-track:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	/* Üzerine gelindiğinde kaydırma yolu arka plan rengi */
+}
+
+
+.sidebar:hover ::-webkit-scrollbar {
+	background-color: rgba(0, 0, 0, 0.2);
+	;
+}
+
+.sidebar:hover ::-webkit-scrollbar-thumb {
+	background-color: #888;
+}
+
+.sidebar ::-webkit-scrollbar {
+	width: 8px;
+	background-color: #0f0f0f;
+}
+
+.sidebar ::-webkit-scrollbar-thumb {
+	background-color: #0f0f0f;
+	border-radius: 4px;
+}
+
+.sidebar ::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+.sidebar ::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.sidebar ::-webkit-scrollbar-track:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-aaa {
+	color: #aaa;
+}
+
+.text-717171 {
+	color: #717171;
+}
+
+.h-025px {
+	height: 0.25px;
+}
+
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
